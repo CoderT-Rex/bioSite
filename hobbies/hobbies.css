@@ -1,0 +1,70 @@
+body {
+    background-image: url('../photos/background.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fixed background scrolling */
+}
+
+/* Reset default margin and padding for body and header */
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 38px;
+}
+
+
+/* navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #8B43D9; /* Accent color as the background */
+    border-bottom: 15px solid #704DF8; /* Accent color as the border */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white; /* White text for good contrast */
+    text-align: center;
+    padding: 14px 356px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #704DF8; /* Accent color on hover */
+    color: white;
+}
+
+.hobby-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hobby-card {
+    width: 350px;
+    background-color: #C956F0;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+	color: white;
+}
+
+.hobby-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hobby-card p {
+    margin-top: 10px;
+}

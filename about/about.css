@@ -1,0 +1,95 @@
+body {
+    background-image: url('../photos/background.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fixed background scrolling */
+}
+
+/* Reset default margin and padding for body and header */
+body, header {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    color: white; 
+    padding: 20px;
+    text-align: left;
+    font-weight: 200;
+    font-size: 38px;
+}
+
+/* Style the header content */
+.header-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between columns */
+    align-items: center; /* Center vertically within header */
+}
+
+/* Style the header text */
+.header-text {
+    flex: 1; /* Occupy available space */
+    padding: 20px; /* Add padding for spacing */
+    margin-left: 200px; /* Adjust the right margin as needed */
+    margin-top: 25; /* Adjust the top margin as needed */
+}
+
+/* Style the header image */
+.header-image img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+	flex: 1; /* Occupy available space */
+    padding: 20px; /* Add padding for spacing */
+    margin-right: 160px; /* Adjust the left margin as needed */
+    margin-top: 25; /* Adjust the top margin as needed */
+}
+
+/* navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #8B43D9; /* Accent color as the background */
+    border-bottom: 15px solid #704DF8; /* Accent color as the border */
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white; /* White text for good contrast */
+    text-align: center;
+    padding: 14px 356px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #704DF8; /* Accent color on hover */
+    color: white;
+}
+
+/* Style the content columns */
+.content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between columns */
+    padding: 20px; /* Add padding for spacing */
+	color: white;
+	
+}
+
+/* Style the left column */
+.left-column {
+    flex: 1; /* Occupy available space */
+    padding: 75px; /* Add padding for spacing inside the column */
+    margin: 0px 75px 20px 75px;
+}
+
+/* Style the right column */
+.right-column {
+    flex: 1; /* Occupy available space */
+    padding: 75px; /* Add padding for spacing inside the column */
+    margin: 0px 75px 20px 75px;
+}
+
+
+
