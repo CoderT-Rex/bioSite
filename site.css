@@ -1,11 +1,13 @@
 body {
-    background-image: url('photos/background.jpg'); /* Specify the path to your background image */
-    background-size: cover; /* Cover the entire viewport with the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-attachment: fixed; /* Fixed background scrolling */
+    background-image: url('photos/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
-/* Reset default margin and padding for body and header */
 body, header {
     margin: 0;
     padding: 0;
@@ -46,64 +48,70 @@ header {
     margin-right: 160px; /* Adjust the left margin as needed */
     margin-top: 25; /* Adjust the top margin as needed */
 }
-
-/* navbar */
 #navbar {
     overflow: hidden;
-    background-color: #8B43D9; /* Accent color as the background */
-    border-bottom: 15px solid #704DF8; /* Accent color as the border */
+    background-color: #8B43D9;
+    border-bottom: 15px solid #704DF8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #navbar a {
-    float: left;
-    display: block;
-    color: white; /* White text for good contrast */
+    color: white;
     text-align: center;
-    padding: 14px 356px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
 #navbar a:hover {
-    background-color: #704DF8; /* Accent color on hover */
+    background-color: #704DF8;
     color: white;
 }
 
-/* Style the content columns */
 .content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space evenly between columns */
-    padding: 20px; /* Add padding for spacing */
-	color: white;
-	
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    color: white;
+    justify-content: space-between;
 }
 
-/* Style the left column */
-.left-column {
-    flex: 1; /* Occupy available space */
-    padding: 75px; /* Add padding for spacing inside the column */
-    margin: 0px 75px 20px 75px;
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+    margin: 0 20px 20px 0;
 }
 
-/* Style the right column */
-.right-column {
-    flex: 1; /* Occupy available space */
-    padding: 75px; /* Add padding for spacing inside the column */
-    margin: 0px 75px 20px 75px;
+.footer-images {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* Style the footer */
-footer {
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
-    text-align: center; /* Center-align the images within the footer */
-    padding: 20px; /* Add padding for spacing inside the footer */
-}
-
-/* Style the footer images */
 .footer-images img {
-    width: 400px; /* Set a fixed width for the images */
-    height: 400px; /* Set a fixed height for the images */
-    margin: 0 25px; /* Add horizontal margin for spacing between images */
+  flex: 1 0 25%; 
+  max-width: 100%;
+  margin: 3px 3px; 
 }
 
+@media (max-width: 800px) {
+  .footer-images img {
+    flex: 1 0 33%; 
+  }
+}
 
+@media (max-width: 600px) {
+  .footer-images img {
+    flex: 1 0 50%;
+  }
+}
 
+@media (max-width: 400px) {
+  .footer-images {
+    flex-direction: column;
+  }
+  
+  .footer-images img {
+    flex: 1 0 100%;
+  }
+}
