@@ -67,6 +67,7 @@ header {
 #navbar a:hover {
     background-color: #704DF8;
     color: white;
+	padding: 14px 75px;
 }
 
 .content {

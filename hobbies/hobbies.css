@@ -1,19 +1,18 @@
 body {
-    background-image: url('../photos/background.jpg'); /* Specify the path to your background image */
-    background-size: cover; /* Cover the entire viewport with the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    background-attachment: fixed; /* Fixed background scrolling */
+    background-image: url('../photos/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* Reset default margin and padding for body and header */
 body, header {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
+
 header {
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0);
     color: white; 
     padding: 20px;
     text-align: center;
@@ -22,25 +21,26 @@ header {
 }
 
 
-/* navbar */
 #navbar {
     overflow: hidden;
-    background-color: #8B43D9; /* Accent color as the background */
-    border-bottom: 15px solid #704DF8; /* Accent color as the border */
+    background-color: #8B43D9;
+    border-bottom: 15px solid #704DF8;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #navbar a {
-    float: left;
-    display: block;
-    color: white; /* White text for good contrast */
+    color: white;
     text-align: center;
-    padding: 14px 356px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
 #navbar a:hover {
-    background-color: #704DF8; /* Accent color on hover */
+    background-color: #704DF8;
     color: white;
+	padding: 14px 75px;
 }
 
 .hobby-cards {
