@@ -106,14 +106,8 @@ header {
     flex: 1 0 33%;
   }
 }
-
+*/
 @media (max-width: 400px) {
   .footer-images {
     flex-direction: column;
-  }
-  
-  .footer-images img {
-    flex: 1 0 100%;
-	max-width: 100%;
-  }
-*/
+}}
