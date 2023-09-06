@@ -95,7 +95,7 @@ header {
   margin: 3px 3px; 
 }
 
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
   .footer-images img {
     flex: 1 0 33%; 
   }
@@ -116,3 +116,4 @@ header {
     flex: 1 0 100%;
 	max-width: 100%;
   }
+*/
