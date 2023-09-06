@@ -103,7 +103,7 @@ header {
 
 @media (max-width: 600px) {
   .footer-images img {
-    flex: 1 0 50%;
+    flex: 1 0 33%;
   }
 }
 
