@@ -13,9 +13,9 @@ body, header {
     padding: 0;
 }
 
-/* Style the header */
+
 header {
-    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    background-color: rgba(255, 255, 255, 0);
     color: white; 
     padding: 20px;
     text-align: left;
@@ -23,30 +23,29 @@ header {
     font-size: 38px;
 }
 
-/* Style the header content */
+
 .header-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space evenly between columns */
-    align-items: center; /* Center vertically within header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-/* Style the header text */
+	
 .header-text {
-    flex: 1; /* Occupy available space */
-    padding: 20px; /* Add padding for spacing */
-    margin-left: 150px; /* Adjust the right margin as needed */
-    margin-top: 25; /* Adjust the top margin as needed */
+    flex: 1; 
+    padding: 20px; 
+    margin-left: 150px; 
+    margin-top: 25; 
 }
 
-/* Style the header image */
+
 .header-image img {
     max-width: 400px;
     height: auto;
     display: block;
-	flex: 1; /* Occupy available space */
-    padding: 20px; /* Add padding for spacing */
-    margin-right: 160px; /* Adjust the left margin as needed */
-    margin-top: 25; /* Adjust the top margin as needed */
+	flex: 1; 
+    padding: 20px; 
+    margin-right: 160px; 
+    margin-top: 25; 
 }
 #navbar {
     overflow: hidden;
@@ -67,7 +66,7 @@ header {
 #navbar a:hover {
     background-color: #704DF8;
     color: white;
-	padding: 14px 75px;
+	padding: 14px 20px;
 }
 
 .content {
@@ -84,6 +83,27 @@ header {
     margin: 0 20px 20px 0;
 }
 
+
+footer {
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center; 
+    padding: 20px; 
+}
+
+
+.footer-images img {
+    width: 400px; 
+    height: 400px; 
+    margin: 0 25px;
+}
+
+
+/*
+
+I was experimenting here with making my website more adaptive so it would load better on mobile
+but my peer feedback said that the flexbox made the images look stretched so I am reverting to 
+my orginal style.
+
 .footer-images {
   display: flex;
   justify-content: space-between;
@@ -95,7 +115,7 @@ header {
   margin: 3px 3px; 
 }
 
-/*@media (max-width: 800px) {
+@media (max-width: 800px) {
   .footer-images img {
     flex: 1 0 33%; 
   }
@@ -106,8 +126,9 @@ header {
     flex: 1 0 33%;
   }
 }
-*/
+
 @media (max-width: 480px) {
   .footer-images {
     flex-direction: column;
 }}
+*/
